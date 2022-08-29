@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
         savedInstanceState.putInt("clock", clock);
         savedInstanceState.putBoolean("running", running);
     }
